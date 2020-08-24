@@ -1,5 +1,6 @@
 server:
   port: 8080
+
 spring:
   datasource:
     username: root
@@ -8,6 +9,9 @@ spring:
     url: jdbc:mysql://localhost:3306/mymall?rewirteBatchedStatements=true&serverTimezone=GMT%2B8
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
 
 jwt:
   tokenHeader: Authorization #JWT存储的请求头
@@ -19,4 +23,5 @@ mybatis:
   mapper-locations:
     -classpath:mapper/*.xml
     -classpath*:com/**/mapper/*/xml
+
 
